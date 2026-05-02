@@ -42,3 +42,9 @@ export const getCategories = async () => {
     setTimeout(() => resolve(CATEGORIES), 300);
   });
 };
+// services/lessonData.js (Add this function)
+export const getRandomSign = async () => {
+  const categories = await getCategories();
+  const allLessons = categories.flatMap(cat => cat.lessons);
+  return allLessons[Math.floor(Math.random() * allLessons.length)];
+};

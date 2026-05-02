@@ -11,7 +11,7 @@ export default function WelcomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: Colors.white }}>
       <View style={styles.mainContent}>
-        <Text style={styles.brandName}>Mijfhf</Text>
+        <Text style={styles.brandName}>UrSign AI</Text>
         <Image source={require('../assets/signimage.png')} style={styles.heroImage} resizeMode="contain" />
         <Text style={styles.subtitle}>Empowering the deaf community of Pakistan through AI-driven Sign Language Translation.</Text>
       </View>
